@@ -265,6 +265,12 @@ class Blockchain:
         return block
 
     def add_block(self, block):
+        """
+        Add a new block to the Blockchain
+
+        Args:
+            block : the block to add
+        """
         transactions = [
             Transaction(tx["sender"], tx["recipeint"], tx["signature", tx["amount"]])
             for tx in block["transactions"]
